@@ -42,49 +42,24 @@ export default function About() {
         {t('ABOUT.ABOUT_ME')}
       </h3>
 
-      <div className="block md:grid md:grid-cols-[3fr_2fr] md:gap-12 text-xs min-[480px]:text-sm min-[1375px]:text-base">
-        <div>
-          <div className="grid grid-cols-1 gap-y-4">
-            <p>
-              {t('ABOUT.P1')}
-            </p>
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-y-4 md:gap-x-12 md:gap-y-8 text-xs min-[480px]:text-sm min-[1375px]:text-base md:items-center">
+        {/* Primeros dos párrafos (lado izquierdo en desktop) */}
+        <div className="order-1 flex flex-col gap-y-4">
+          <p>
+            {t('ABOUT.P1')}
+          </p>
 
-            <p>
-              {t('ABOUT.P21')}
-              <span className={'text-secondary-orange'}>{t('ABOUT.WEB')}</span>
-              {t('ABOUT.AND')}
-              <a href={links.GIS} target="_blank" className={'text-secondary-orange underline-effect'}>{t('ABOUT.GIS')}</a>
-              {t('ABOUT.P22')}
-            </p>
-
-            <div className="flex flex-col gap-y-1">
-              <p>
-                {t('ABOUT.P3')}
-              </p>
-              <p>
-                {t('ABOUT.P31')}
-              </p>
-              <p>
-                {t('ABOUT.P32')}
-              </p>
-              <p>
-                {t('ABOUT.P33')}
-              </p>
-            </div>
-
-            <p>
-              {t('ABOUT.P4')}
-            </p>
-
-            <p>
-              {t('ABOUT.P5')}
-            </p>
-
-            <p>{t('ABOUT.TECH_I_KNOW')}</p>
-          </div>
+          <p>
+            {t('ABOUT.P21')}
+            <span className={'text-secondary-orange'}>{t('ABOUT.WEB')}</span>
+            {t('ABOUT.AND')}
+            <a href={links.GIS} target="_blank" className={'text-secondary-orange underline-effect'}>{t('ABOUT.GIS')}</a>
+            {t('ABOUT.P22')}
+          </p>
         </div>
 
-        <div className="relative max-w-[300px] mt-[50px] mx-auto mb-0 w-[70%] md:m-auto md:w-full max-[450px]:pb-12">
+        {/* Imagen de la cara (a la derecha de los dos párrafos en desktop; al final del texto en móvil como antes) */}
+        <div className="order-3 md:order-2 relative max-w-[300px] mt-[50px] md:mt-0 mx-auto mb-0 w-[70%] md:m-auto md:w-full max-[450px]:pb-12">
           <div className="block relative w-full rounded bg-main-gray
                   transition-all duration-500 ease-out transform
                   hover:-translate-x-1 hover:-translate-y-1
@@ -106,6 +81,34 @@ export default function About() {
               height={1068}
               sizes="(max-width: 768px) 70vw, 300px" />
           </div>
+        </div>
+
+        {/* Párrafo de resultados y resto del texto (ancho completo en desktop debajo de los párrafos y la foto) */}
+        <div className="order-2 md:order-3 md:col-span-2 flex flex-col gap-y-4">
+          <div className="flex flex-col gap-y-1">
+            <p>
+              {t('ABOUT.P3')}
+            </p>
+            <p>
+              {t('ABOUT.P31')}
+            </p>
+            <p>
+              {t('ABOUT.P32')}
+            </p>
+            <p>
+              {t('ABOUT.P33')}
+            </p>
+          </div>
+
+          <p>
+            {t('ABOUT.P4')}
+          </p>
+
+          <p>
+            {t('ABOUT.P5')}
+          </p>
+
+          <p>{t('ABOUT.TECH_I_KNOW')}</p>
         </div>
 
       </div>
