@@ -51,22 +51,33 @@ export default function About() {
 
             <p>
               {t('ABOUT.P21')}
-              <a href={links.GIS} target="_blank" className={'text-secondary-orange underline-effect'}>{t('ABOUT.GIS')}</a>
-              {', '}
               <span className={'text-secondary-orange'}>{t('ABOUT.WEB')}</span>
               {t('ABOUT.AND')}
-              <span className={'text-secondary-orange'}>{t('ABOUT.DESKTOP')}</span>
-              {', '}
-              {t('ABOUT.EVEN')}
-              <a href={links.ERP} target="_blank" className={'text-secondary-orange underline-effect'}>{t('ABOUT.ERP')}</a>
-              {t('ABOUT.AND')}
-              <span className={'text-secondary-orange'}>{t('ABOUT.MOBILE')}</span>
-              {'. '}
+              <a href={links.GIS} target="_blank" className={'text-secondary-orange underline-effect'}>{t('ABOUT.GIS')}</a>
               {t('ABOUT.P22')}
             </p>
 
+            <div className="flex flex-col gap-y-1">
+              <p>
+                {t('ABOUT.P3')}
+              </p>
+              <p>
+                {t('ABOUT.P31')}
+              </p>
+              <p>
+                {t('ABOUT.P32')}
+              </p>
+              <p>
+                {t('ABOUT.P33')}
+              </p>
+            </div>
+
             <p>
-              {t('ABOUT.P3')}
+              {t('ABOUT.P4')}
+            </p>
+
+            <p>
+              {t('ABOUT.P5')}
             </p>
 
             <p>{t('ABOUT.TECH_I_KNOW')}</p>

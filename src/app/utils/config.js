@@ -29,9 +29,6 @@ module.exports = {
       CSharp: 'C#',
       JS: 'JavaScript',
       Py: 'Python',
-      TS: 'TypeScript',
-      HTML: 'HTML',
-      CSS: 'CSS',
     },
     'Frameworks': {
       REACT: 'React',
@@ -40,8 +37,6 @@ module.exports = {
     },
     'Databases': {
       POST: 'PostgreSQL',
-      SQLSer: 'SQL Server',
-      MySQL: 'MySQL',
     },
     'Version Control': {
       GIT: 'Git',
@@ -59,7 +54,6 @@ module.exports = {
       JEN: 'Jenkins',
       AGILE: 'Agile',
       TW: 'Tailwind CSS',
-      BS: 'Bootstrap',
     },
   },
 
